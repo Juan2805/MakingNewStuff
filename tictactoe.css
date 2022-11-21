@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+}
+
+/* Landing --------------------------------------------------------------------- */
+
+/* .landing {
+    background-color: rgb(212, 212, 212);
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 8em;
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+.subtitle {
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+}
+
+.chose {
+    font-size: 1.5em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.weapons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weapon {
+    font-size: 1em;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+} */
+
+/* Tic Tac Toe ------------------------------------------------------------------ */
+
+/* .tic_tac_toe {
+    background-color: rgb(212, 212, 212);
+    width: 300px;
+    height: 465px;
+    margin: 100px auto;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.player_turn {
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+.tic_tac_toe_container_grid {
+    margin: 20px auto;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.tic_tac_toe_container_grid button {
+    background-color: rgb(162, 162, 162);
+    border: none;
+}
+
+.box {
+    font-size: 3em;
+    text-align: center;
+    height: 90px;
+    width: 90px;
+} */
+
+/* Winner --------------------------------------------------------------------------------------- */
+
+/* .winner_container {
+    background-color: rgb(212, 212, 212);
+    width: 300px;
+    height: 100px;
+    margin: 150px auto;
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.winner, .continue {
+    font-size: 1.8em;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.play_again {
+    text-decoration: none;
+    height: 30px;
+} */
+
+/* NEW GAME DESING ------------------------------------------------------------------------------------------------------- */
+
+body {
+    background-color: rgb(247, 243, 243);
+}
+
+.game_container {
+    width: 1024px;
+    margin: 2em auto;
+    background-color: rgb(236, 73, 45);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 24% 45% 29%;
+    gap: 1%;
+    padding: .5%;
+}
+
+/* Game Info ------------------------------------------------- */
+
+.game_info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.game_name_container {
+    height: 100;
+}
+
+.game_name_intro {
+    font-size: 6em;
+    text-align: center;
+}
+
+.game_name {
+    font-size: 2em;
+    text-align: center;
+}
+
+.player_x_name, .player_o_name {
+    display: flex;
+}
+
+.player_x_label, .player_o_label {
+    width: 40%;
+}
+
+.player_x_input, .player_o_input {
+    width: 60%;
+}
+
+/* Gmae Board --------------------------------------------------- */
+
+.game_board_container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.board_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.players_name {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    margin: auto 0 0 0;
+}
+
+.box {
+    width: 130px;
+    height: 130px;
+    background-color: orange;
+    margin: 2px;
+    font-size: 6em;
+    border: none;
+}
+
+
+/* Players Stats -------------------------------------------------- */
+
+.players_stats_container {
+    border: 2px solid black;
+}
+
+/* Winner --------------------------------------------------------- */
+
+.show_winner_container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.show_winner {
+    width: 1024px;
+    margin: 2em auto;
+    background-color: rgb(236, 73, 45, 0.7);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

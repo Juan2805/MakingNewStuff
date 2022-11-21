@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <title>Making New Stuff</title>
+</head>
+<body id="body">
+
+    <div class="game_container">
+        <!-- Starting Section ------------------------------------------------------------------------------------------------------------- -->
+        <div class="game_info_container">
+            <div class="game_name_container">
+                <h1 class="game_name_intro">Play!</h1>
+                <h2 class="game_name">Tic-Tac-Toe</h2>
+            </div>
+            <div class="player_x_name">
+                <label class="player_x_label" for="">Player X Name:</label>
+                <input class="player_x_input" type="text">
+            </div>
+            <div class="player_o_name">
+                <label class="player_o_label" for="">Player O Name:</label>
+                <input class="player_o_input" type="text">
+            </div>
+            <div class="game_mode_description">
+                <p class="normal_game_mode">Normal<br>You will fill the tiles in turns, until someone wins or draws!</p>
+                <p class="advanced_game_mode">Advanced<br>In this mode, you will have 3 times to fill a tile, if theres is no winner by then you have to move one of yours tiles to an empty square in a radius of 1, leaving the previus tile free! The game ends with a winner!</p>
+            </div>
+            <div class="select_mode_container">
+                <label for="" class="select_mode">Select Mode:</label>
+                <button class="normal_mode">Normal</button>
+                <button class="advanced_mode">Advanced</button>
+            </div>
+            <div class="start_game_container">
+                <button class="start_game">Start Game!</button>
+            </div>
+        </div>
+        <!-- Game Section ----------------------------------------------------------------------------------------------------------------- -->
+        <div class="game_board_container">
+            <div class="players_name">
+                <h3 class="player_turn" value='X'>Name turn!</h3>
+                <h3 class="player_turn" value='O'>Name turn!</h3>
+            </div>
+            <div class="board_container">
+                <button class="box win1 win4 win7" id='00'></button>
+                <button class="box win1 win5" id='01'></button>
+                <button class="box win1 win6 win8" id='02'></button>
+                <button class="box win2 win4" id='10'></button>
+                <button class="box win2 win5 win7 win8" id='11'></button>
+                <button class="box win2 win6" id='12'></button>
+                <button class="box win3 win4 win8" id='20'></button>
+                <button class="box win3 win5" id='21'></button>
+                <button class="box win3 win6 win7" id='22'></button>
+            </div>
+        </div>
+        <!-- Statistics Section ----------------------------------------------------------------------------------------------------------- -->
+        <div class="players_stats_container">
+
+        </div>
+    </div>
+    <!-- Winner Section --------------------------------------------------------------------------------------------------------------- -->
+    <div class="show_winner_container">
+        <div class="show_winner">
+            <h1 class="winner"></h1>
+            <div class="whats_next">
+                <button class="try_again">Try Again</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="landing" id="landing">
+        <h1 class="title">Play!</h1>
+        <h2 class="subtitle">Tic-Tac-Toe</h2>
+        <h3 class="chose">Chose your weapon!</h3>
+        <div class="weapons">
+            <button class="weapon" onclick={choseWeapon(value)} value="0">X</button>
+            <button class="weapon" onclick={choseWeapon(value)} value="1">O</button>
+        </div>
+    </div> -->
+</body>
+<script src="./tictactoe.js"></script>
+</html>
